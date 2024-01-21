@@ -1,5 +1,7 @@
+<<<<<<< HEAD
 # bun-todo
-
+# Bun-To-Do
+A simple &amp; basic To-Do List 📝, created using 'bun.sh' 
 To install dependencies:
 
 ```bash
@@ -26,3 +28,6 @@ because they would help in
 
 just added this code:- bun add -D react react-dom @types/react @types/react-dom  
 to install react dependancies
+=======
+
+>>>>>>> origin/main
