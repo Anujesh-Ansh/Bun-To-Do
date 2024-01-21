@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html data-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bun To-Do</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico">        
+        
+        <!-- For HTMX -->
+        <script src="https://unpkg.com/htmx.org@1.9.6"></script> 
+        
+        <!-- For Hyperscript -->
+        <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+        
+        <!-- For JSON Encoding -->
+        <script src="https://unpkg.com/htmx.org/dist/ext/json-enc.js"></script>
+        
+        <!-- For Pico -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+        
+    </head>
+    <body>
+        
+        <header class="container">
+            <hgroup>
+                <h1 style="font-size: 70px; font-weight: bolder; font-style: italic;">
+                    Bun 1.0.24
+                </h1>
+                <h2 style="font-size: 20px; font-style: italic;">To-Do List App</h2>
+            </hgroup>
+        </header>
+
+        <main class="container">
+            <form hx-post="/todos" hx-target="#todos" hx-ext="json-enc" _="on submit target.reset()">
+                <label for="todo">Bun To-Do</label>
+                <input type="text" id="todo" name="todo" aria-label="Create Bun To-Do" placeholder="New Bun To-Do">
+                <button type="submit">Create Bun</button>
+            </form>
+
+            <section id="todos" hx-get="/todos" hx-trigger="load">
+
+            </section>
+        </main>
+
+    </body>
+</html>
