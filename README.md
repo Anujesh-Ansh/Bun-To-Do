@@ -1,33 +1,34 @@
-<<<<<<< HEAD
-# bun-todo
-# Bun-To-Do
-A simple &amp; basic To-Do List 📝, created using 'bun.sh' 
-To install dependencies:
+# Bun-To-Do 📝
+
+Welcome to Bun-To-Do, a simple and basic To-Do List created using 'bun.sh'—your go-to for efficient task management! 🚀✅
+
+## Installation 🛠️
+
+To install dependencies, run the following command:
 
 ```bash
 bun install
 ```
 
-To run:
+## How to Run 🏃‍♂️
+
+To run the To-Do List, execute the following command:
 
 ```bash
 bun run index.tsx
 ```
 
-This project was created using `bun init` in bun v1.0.4. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+This project was initiated with `bun init` in bun v1.0.4. [Bun](https://bun.sh) is a fast, all-in-one JavaScript runtime.
 
+## Usage of Scripts 📜
 
+The use of "scripts" ensures that the bun constantly runs this file, keeping it updated each time.
 
-Here we are using "scripts"
+```bash
+// Example of using scripts
+bun add -D react react-dom @types/react @types/react-dom
+```
 
-because they would help in 
+This command adds React dependencies, enhancing the project with dynamic and interactive features.
 
-// it makes the bun to constantly run this file in order to get updated each time
-
-
-
-just added this code:- bun add -D react react-dom @types/react @types/react-dom  
-to install react dependancies
-=======
-
->>>>>>> origin/main
+Feel free to explore and modify Bun-To-Do according to your preferences and requirements. Happy tasking! 📝🌟
